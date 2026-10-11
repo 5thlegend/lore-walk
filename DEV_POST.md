@@ -9,9 +9,9 @@ cover_image: https://lore-walk-nextrealm.dankpenta.workers.dev/og.png
 
 ## What I Built
 
-On my team I'm the guy who holds the tablet. My partner sees the blueprint; my job is to translate it into something people can actually see. They call me the Lorekeeper, half as a joke. But the honest truth is that most of my "lore" gets made indoors, under a ceiling, staring at a screen.
+I run Next Realm Interactive. My friend and creative director, Bully ([@BullyStepHarder](https://instagram.com/BullyStepHarder)), is the guy on our team who holds the tablet. I see the blueprint; he translates it into something people can actually see. We call him the Lorekeeper, half as a joke. But most of his lore gets made indoors, under a ceiling, staring at a screen.
 
-So I made something that argues with me about that.
+So I built him something that argues with that, and gets him curious about what open AI can do in his hands.
 
 **LORE WALK** is a phone app whose main instruction is *put me away*. You tap **Start a walk**, and the screen tells you exactly one thing: *find something worth remembering.* Then you go. When something stops you, like a tree with a split trunk, a door painted a color nobody would choose, or a rock that looks like it's been waiting, you pull the phone out for about ten seconds and take one photo.
 
@@ -19,7 +19,7 @@ A small open-weight model running **on the phone** reads the photo. A second sma
 
 When you end the walk, you get the **Lore Codex**: every shard in the order you found it, with an optional little route line if you turned on location. You can export it as Markdown or as one tall image to share.
 
-The screen should be the shortest part of the walk. That was the whole design brief I gave myself.
+The screen should be the shortest part of the walk. That was the whole design brief.
 
 ## Demo
 
@@ -29,7 +29,7 @@ The screen should be the shortest part of the walk. That was the whole design br
 
 ## Code
 
-{% github [FILL IN: github-username]/lore-walk %}
+{% github 5thlegend/lore-walk %}
 
 MIT licensed. It's plain HTML, CSS, and one JS module. No build step and no backend.
 
@@ -63,4 +63,4 @@ Because of where this app is meant to be used: outside, where the signal is bad.
 
 ## I Took It Outside
 
-[FILL IN: Bully's real walk: where you went, what you photographed, the shard that surprised you, what the models got wrong, photos of the Codex. Don't publish until this is real.]
+[FILL IN: the real walk (Bully's and/or yours): where you went, what you photographed, the shard that surprised you, what the models got wrong, photos of the Codex. Don't publish until this is real.]

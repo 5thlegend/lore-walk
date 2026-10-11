@@ -1,4 +1,4 @@
-# LORE WALK — by Bully · Next Realm Interactive
+# LORE WALK — by Penta Dank · Next Realm Interactive
 
 > Walk the world. Write its lore.
 
@@ -6,7 +6,7 @@
 
 Live: https://lore-walk-nextrealm.dankpenta.workers.dev
 
-Created by **Bully** ([@BullyStepHarder](https://instagram.com/BullyStepHarder)) — creative director & designer at Next Realm Interactive, a.k.a. *The Lorekeeper*. Built for the DEV **Hacktoberfest Open-Source AI Challenge — Week 1: Touch Grass**.
+Built by **Penta Dank** (General Dank) of Next Realm Interactive for his friend and creative director **Bully** ([@BullyStepHarder](https://instagram.com/BullyStepHarder)), a.k.a. *The Lorekeeper*, to pull his creativity outside and into open AI. Built for the DEV Hacktoberfest Open-Source AI Challenge, Week 1: Touch Grass.
 
 ## Open stack (all in the browser)
 | Job | Model | Runtime |
@@ -32,4 +32,4 @@ npx wrangler deploy        # Workers static assets (wrangler.jsonc)
 ```
 
 ## License
-MIT © 2026 Bully / Next Realm Interactive
+MIT © 2026 Penta Dank / Next Realm Interactive

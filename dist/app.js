@@ -153,7 +153,7 @@ function renderCodex() {
 }
 function codexMD() {
   const w = S.walk;
-  return `# Lore Codex — ${new Date(w.started).toLocaleDateString()}\n\n*Written on foot with LORE WALK — by Bully · Next Realm Interactive. Open-weight models, on-device.*\n\n` +
+  return `# Lore Codex — ${new Date(w.started).toLocaleDateString()}\n\n*Written on foot with LORE WALK — by Penta Dank · Next Realm Interactive. Open-weight models, on-device.*\n\n` +
     w.shards.map(s => `## ${s.n}. ${s.title}\n\n${s.lore}\n\n> seen: ${s.caption || '—'}${s.pos ? ` · ${s.pos.join(', ')}` : ''} · models: ${s.models.join(' → ')}\n`).join('\n');
 }
 function dl(name, href) { const a = document.createElement('a'); a.href = href; a.download = name; a.click(); }
@@ -162,7 +162,7 @@ async function codexPNG() {
   const W = 1080, sh = S.walk.shards, H = 260 + sh.length * 760; const c = document.createElement('canvas'); c.width = W; c.height = H; const g = c.getContext('2d');
   const grd = g.createLinearGradient(0, 0, 0, H); grd.addColorStop(0, '#2a1450'); grd.addColorStop(1, '#0b0614'); g.fillStyle = grd; g.fillRect(0, 0, W, H);
   g.fillStyle = '#f2b134'; g.font = '700 84px Impact, Arial Narrow, sans-serif'; g.textAlign = 'center'; g.fillText('LORE CODEX', W / 2, 120);
-  g.fillStyle = '#f4efe699'; g.font = '28px sans-serif'; g.fillText('LORE WALK — by Bully · Next Realm Interactive', W / 2, 175);
+  g.fillStyle = '#f4efe699'; g.font = '28px sans-serif'; g.fillText('LORE WALK — by Penta Dank · Next Realm Interactive', W / 2, 175);
   let y = 240; g.textAlign = 'left';
   for (const s of sh) {
     const im = await new Promise(r => { const i = new Image(); i.onload = () => r(i); i.src = s.thumb; });
