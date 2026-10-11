@@ -25,11 +25,11 @@ The screen should be the shortest part of the walk. That was the whole design br
 
 **Live:** https://lore-walk-nextrealm.dankpenta.workers.dev (open it on your phone; it installs as a PWA)
 
-![Lore Walk home screen](https://raw.githubusercontent.com/5thlegend/lore-walk/master/docs/shot-home.png)
+![Lore Walk home screen](https://lore-walk-nextrealm.dankpenta.workers.dev/shot-home.png)
 
-![A Lore Shard being written](https://raw.githubusercontent.com/5thlegend/lore-walk/master/docs/shot-walk.png)
+![A Lore Shard being written](https://lore-walk-nextrealm.dankpenta.workers.dev/shot-walk.png)
 
-![The Lore Codex](https://raw.githubusercontent.com/5thlegend/lore-walk/master/docs/shot-codex.png)
+![The Lore Codex](https://lore-walk-nextrealm.dankpenta.workers.dev/shot-codex.png)
 
 *Screenshots from a full run on my machine: photo in, caption, tags, lore, Codex.*
 
