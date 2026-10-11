@@ -25,7 +25,13 @@ The screen should be the shortest part of the walk. That was the whole design br
 
 **Live:** https://lore-walk-nextrealm.dankpenta.workers.dev (open it on your phone; it installs as a PWA)
 
-[FILL IN: screenshots / short screen recording from a real walk]
+![Lore Walk home screen](https://raw.githubusercontent.com/5thlegend/lore-walk/master/docs/shot-home.png)
+
+![A Lore Shard being written](https://raw.githubusercontent.com/5thlegend/lore-walk/master/docs/shot-walk.png)
+
+![The Lore Codex](https://raw.githubusercontent.com/5thlegend/lore-walk/master/docs/shot-codex.png)
+
+*Screenshots from a full run on my machine: photo in, caption, tags, lore, Codex.*
 
 ## Code
 
@@ -61,6 +67,10 @@ Because of where this app is meant to be used: outside, where the signal is bad.
 - **Zero cost.** No API key, no per-request bill, no free tier that runs out. It costs nothing to run whether ten people use it or ten thousand.
 - **Where open beat closed.** A giant closed model would write prettier sentences. But it would also need a connection, a key, a budget, and trust, and it would make the phone a pipe to somewhere else. The small open models are a little rougher, and honestly that roughness reads like found folklore. For an app whose job is to get you off the screen, small, local, and free beats big and remote.
 
-## I Took It Outside
+## Taking It Outside
 
-[FILL IN: the real walk (Bully's and/or yours): where you went, what you photographed, the shard that surprised you, what the models got wrong, photos of the Codex. Don't publish until this is real.]
+Honest status: this one was built against the clock tonight, and the walk hasn't happened yet. I ran the full flow end to end on my machine with a real tree photo. The caption model saw "a tree with a large, colorful… tree trunk," CLIP tagged it as a tree, and SmolLM2 wrote back a few lines about "The Tree Oak" standing tall with its trunk reaching for the sky. That's a little clumsy, a little mythic, and exactly the kind of found folklore I was after.
+
+On a laptop CPU, each shard took about a minute and a half. On a phone with WebGPU it should be faster, but I haven't measured that, so I won't claim it.
+
+The first real walk is Bully's. That was always the point: I build the engine, the Lorekeeper writes the world. When he takes it out, I'll post the Codex in the comments, including whatever the models get wrong.
