@@ -1,80 +1,83 @@
+0s REQ y=Anton&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;600&display=swap
+0s REQ https://fonts.gstatic.com/s/anton/v27/1Ptgg87LROyAm3Kz-C8.woff2
 0s C: No available adapters.
-0s C: [status] Reading the place…
-0s REQ https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/transformers.min.js
-0s REQ https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/transformers.min.js
-1s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer_config.json
-1s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/config.json
-1s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer.json
-1s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/preprocessor_config.json
-1s REQ ioning%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%226f7721876b78a25a3d68b489e052d838e2ce210b%22
-1s C: Unable to determine content-length from response headers. Will expand buffer when needed.
-1s C: Unable to determine content-length from response headers. Will expand buffer when needed.
-1s REQ image-captioning%2Fresolve%2Fmain%2Fconfig.json=&etag=%227dd4da733bed9b207d4d298fbdc1f2522b213b34%22
-1s REQ ge-captioning%2Fresolve%2Fmain%2Ftokenizer.json=&etag=%226cf4037be3495495a325625d71d98c3271de9ab8%22
-1s REQ ing%2Fresolve%2Fmain%2Fpreprocessor_config.json=&etag=%22fdac17c98fd3b94bbdb6dead851966e46282d9d9%22
-1s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer.json
-1s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/preprocessor_config.json
-1s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/config.json
-1s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer_config.json
-1s REQ tps://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/onnx/encoder_model_quantized.onnx
-1s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/generation_config.json
-1s REQ uggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/onnx/decoder_model_merged_quantized.onnx
-1s C: Unable to determine content-length from response headers. Will expand buffer when needed.
-1s REQ ing%2Fresolve%2Fmain%2Fpreprocessor_config.json=&etag=%22fdac17c98fd3b94bbdb6dead851966e46282d9d9%22
-1s C: Unable to determine content-length from response headers. Will expand buffer when needed.
-1s REQ image-captioning%2Fresolve%2Fmain%2Fconfig.json=&etag=%227dd4da733bed9b207d4d298fbdc1f2522b213b34%22
-1s REQ ioning%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%226f7721876b78a25a3d68b489e052d838e2ce210b%22
-1s REQ ge-captioning%2Fresolve%2Fmain%2Ftokenizer.json=&etag=%226cf4037be3495495a325625d71d98c3271de9ab8%22
-1s REQ oning%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22af80627988c9f9542ffcde39bd51942c0d3bd99c%22
-1s REQ tps://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/onnx/encoder_model_quantized.onnx
-1s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/generation_config.json
-1s REQ uggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/onnx/decoder_model_merged_quantized.onnx
-1s REQ oning%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22af80627988c9f9542ffcde39bd51942c0d3bd99c%22
-4s REQ p5zehK6eGpopQ8Ez7QziSeGp6o1kjgEVKvkvQ__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256
-4s REQ kCihw4w0GaUbnt8zTUBYPe1sBNI7EE6eiQlhqA_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256
-5s REQ https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/ort-wasm-simd-threaded.jsep.mjs
-5s REQ https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/ort-wasm-simd-threaded.jsep.mjs
-5s REQ https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/ort-wasm-simd-threaded.jsep.wasm
-6s REQ https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/ort-wasm-simd-threaded.jsep.wasm
-7s REQ ButSbY1FNy5SQpSjBfwgU5v-5cGEuOEJXX483kI&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256
-7s REQ rhEt0b9ikYGJXMHmb6drgcI6vgCNkpe9tW3Xkz3&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256
-14s C: [status] Naming what it is…
-14s REQ https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/tokenizer.json
-14s REQ https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/config.json
-14s REQ https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/preprocessor_config.json
-14s C: Unable to determine content-length from response headers. Will expand buffer when needed.
-14s C: Unable to determine content-length from response headers. Will expand buffer when needed.
-14s REQ -base-patch32%2Fresolve%2Fmain%2Ftokenizer.json=&etag=%22bc1f77d20440541dd073ebae6f6c401087c7d34e%22
-14s REQ vit-base-patch32%2Fresolve%2Fmain%2Fconfig.json=&etag=%22e79bad158b04c235740f9b2ec320b17f4030f7a5%22
-14s REQ h32%2Fresolve%2Fmain%2Fpreprocessor_config.json=&etag=%22e0675735fd0052745f2f7b7291e4aa7859389998%22
-14s REQ https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/tokenizer_config.json
-14s REQ atch32%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22c9b2a711cbdd039529fa5a66f1965e13eb14451d%22
-14s REQ https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/onnx/model_quantized.onnx
-18s REQ Q5No-iF0Uoq0tXEXMDShZdWtHbx4gO473KR75w_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256
-21s C: [status] Writing the lore…
-21s REQ https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/tokenizer_config.json
-21s REQ https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/tokenizer.json
-21s REQ https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/config.json
-21s C: Unable to determine content-length from response headers. Will expand buffer when needed.
-21s REQ struct%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%228c7b22013909450429303ed10be4398bd63f5457%22
-21s C: Unable to determine content-length from response headers. Will expand buffer when needed.
-21s REQ 360M-Instruct%2Fresolve%2Fmain%2Ftokenizer.json=&etag=%22f922b1797f0c88e71addc8393787831f2477a4bd%22
-21s REQ M2-360M-Instruct%2Fresolve%2Fmain%2Fconfig.json=&etag=%224f2ae86545bb5c1d4fcc55644deef86be50a7dee%22
-21s REQ https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/generation_config.json
-21s REQ https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/onnx/model_q4.onnx
-21s REQ truct%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22da6c4d71a43aa7e6f785bdbb28ea5025438a73fa%22
-29s REQ mNMroMLd26L05I0pksKAo8reY4Vg--n1cmZRw__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256
-31s C: Unable to add response to browser cache: UnknownError: Failed to execute 'put' on 'Cache': Unexpected internal error..
-36s C: No available adapters.
-98s C: unparsable lore *Title of Place: The Tree Oak*, A Sacred Forest 
-   **Lore:** 
-Located deep within a lush, earthy grove, The Tree Oak stands tall, its majestic trunk reaching toward the sky like a giant emerald heart. Beneath its canopy lies a multitude of life; vibrant blooms that radiate their col
-RESULT: SHARD 01 · 7:11 PM
-THE WATCH OF ORRIN
+0s REQ https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2
+0s REQ s.gstatic.com/s/cormorantgaramond/v21/co3smX5slCNuHLi8bLeY9MK7whWMhyjYrGFEsdtdc62E6zd5wDD-iNM8.woff2
+0s REQ https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2
+2s C: [status] Reading the place…
+2s REQ https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/transformers.min.js
+2s REQ https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/transformers.min.js
+2s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer_config.json
+2s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/preprocessor_config.json
+2s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/config.json
+2s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer.json
+2s REQ ioning%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%226f7721876b78a25a3d68b489e052d838e2ce210b%22
+2s REQ ing%2Fresolve%2Fmain%2Fpreprocessor_config.json=&etag=%22fdac17c98fd3b94bbdb6dead851966e46282d9d9%22
+2s C: Unable to determine content-length from response headers. Will expand buffer when needed.
+2s C: Unable to determine content-length from response headers. Will expand buffer when needed.
+2s REQ image-captioning%2Fresolve%2Fmain%2Fconfig.json=&etag=%227dd4da733bed9b207d4d298fbdc1f2522b213b34%22
+2s REQ ge-captioning%2Fresolve%2Fmain%2Ftokenizer.json=&etag=%226cf4037be3495495a325625d71d98c3271de9ab8%22
+2s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/preprocessor_config.json
+2s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer_config.json
+2s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/config.json
+2s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer.json
+2s REQ ioning%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%226f7721876b78a25a3d68b489e052d838e2ce210b%22
+2s REQ ing%2Fresolve%2Fmain%2Fpreprocessor_config.json=&etag=%22fdac17c98fd3b94bbdb6dead851966e46282d9d9%22
+2s REQ tps://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/onnx/encoder_model_quantized.onnx
+2s REQ uggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/onnx/decoder_model_merged_quantized.onnx
+2s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/generation_config.json
+2s C: Unable to determine content-length from response headers. Will expand buffer when needed.
+2s C: Unable to determine content-length from response headers. Will expand buffer when needed.
+2s REQ image-captioning%2Fresolve%2Fmain%2Fconfig.json=&etag=%227dd4da733bed9b207d4d298fbdc1f2522b213b34%22
+2s REQ ge-captioning%2Fresolve%2Fmain%2Ftokenizer.json=&etag=%226cf4037be3495495a325625d71d98c3271de9ab8%22
+2s REQ oning%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22af80627988c9f9542ffcde39bd51942c0d3bd99c%22
+2s REQ tps://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/onnx/encoder_model_quantized.onnx
+2s REQ uggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/onnx/decoder_model_merged_quantized.onnx
+2s REQ https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/generation_config.json
+3s REQ oning%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22af80627988c9f9542ffcde39bd51942c0d3bd99c%22
+6s REQ zYUHw6DvWSKTkHMfQq1sr1TV4NTIY3b64Vrv6E_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256
+6s REQ q0SrT1pXQjiMQxi9TD6epAmjDbM5gt5kM7qqeo_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256
+7s REQ https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/ort-wasm-simd-threaded.jsep.mjs
+7s REQ https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/ort-wasm-simd-threaded.jsep.mjs
+7s REQ https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/ort-wasm-simd-threaded.jsep.wasm
+8s REQ https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/ort-wasm-simd-threaded.jsep.wasm
+9s REQ hmpNCmV9qkseOVBG5nAsQIPUx7XQcDTlKzTFoQ_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256
+10s REQ 7EqNEYqm8-uutVfRSh3YauUMNTfg5dcfxhgpfM_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256
+17s C: [status] Naming what it is…
+17s REQ https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/tokenizer.json
+17s REQ https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/tokenizer_config.json
+17s REQ https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/config.json
+17s REQ https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/preprocessor_config.json
+17s REQ atch32%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22c9b2a711cbdd039529fa5a66f1965e13eb14451d%22
+17s C: Unable to determine content-length from response headers. Will expand buffer when needed.
+17s REQ -base-patch32%2Fresolve%2Fmain%2Ftokenizer.json=&etag=%22bc1f77d20440541dd073ebae6f6c401087c7d34e%22
+17s C: Unable to determine content-length from response headers. Will expand buffer when needed.
+17s REQ vit-base-patch32%2Fresolve%2Fmain%2Fconfig.json=&etag=%22e79bad158b04c235740f9b2ec320b17f4030f7a5%22
+17s REQ h32%2Fresolve%2Fmain%2Fpreprocessor_config.json=&etag=%22e0675735fd0052745f2f7b7291e4aa7859389998%22
+17s REQ https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/onnx/model_quantized.onnx
+21s REQ ypPS2mEJMv5Hy49WqcI9Cna4-ksKYQsqavOwA__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256
+24s C: [status] Writing the lore…
+24s REQ https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/tokenizer.json
+24s REQ https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/tokenizer_config.json
+24s REQ https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/config.json
+24s C: Unable to determine content-length from response headers. Will expand buffer when needed.
+24s REQ 360M-Instruct%2Fresolve%2Fmain%2Ftokenizer.json=&etag=%22f922b1797f0c88e71addc8393787831f2477a4bd%22
+24s C: Unable to determine content-length from response headers. Will expand buffer when needed.
+24s REQ M2-360M-Instruct%2Fresolve%2Fmain%2Fconfig.json=&etag=%224f2ae86545bb5c1d4fcc55644deef86be50a7dee%22
+24s REQ struct%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%228c7b22013909450429303ed10be4398bd63f5457%22
+24s REQ https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/onnx/model_q4.onnx
+24s REQ https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/generation_config.json
+24s REQ truct%2Fresolve%2Fmain%2Fgeneration_config.json=&etag=%22da6c4d71a43aa7e6f785bdbb28ea5025438a73fa%22
+34s REQ f4QF2bW1KaTb0KRuOJop9CREQtr6odUSZVMnw__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256
+36s C: Unable to add response to browser cache: UnknownError: Failed to execute 'put' on 'Cache': Unexpected internal error..
+41s C: No available adapters.
+RESULT: I
+SHARD 01 · 7:36 PM
+PUKUTUKA [BY AETHERE] : THE LUMINOUS TREE
 
-Long before the roads had names, the tree at Orrin was where the Realm kept its promises. Travelers describe it plainly — a tree with a large, colorful, and colorful tree trunk — and that is how it hides. Touch it once and you will remember a place you have never been.
+At twilight the Moon-Moon rises against the sky of pukutuckana over Pikinipu’s sacred hui iwi – and to your knowledge that is where you find what was once white from its blossoms all around under great oak—trees like those beneath which there lies white and gray rainbows so clear they shine like the stars above, the sun descends behind towering giants through whose eyes can shine their glowlike shining jewels. In the light of day such wisdom guides many others toward it with whom even morning seems little; it shows them peace.
 
 seen: a tree with a large, colorful, and colorful tree trunk · tags: tree
-models: Xenova/vit-gpt2-image-captioning → Xenova/clip-vit-base-patch32 → template (seeded by vision output) · 97.4s on-device
+models: Xenova/vit-gpt2-image-captioning → Xenova/clip-vit-base-patch32 → HuggingFaceTB/SmolLM2-360M-Instruct · 124.4s on-device
 
 Shard saved. Now put me away again.

@@ -23,7 +23,7 @@ $('endBtn').onclick = () => { S.walk.ended = new Date().toISOString(); persist()
 $('newBtn').onclick = () => $('startBtn').onclick();
 $('codexBtnHome').onclick = () => { S.walk = loadWalks().at(-1); renderCodex(); };
 const updCount = () => $('shardCount').textContent = `${S.walk.shards.length} shard${S.walk.shards.length === 1 ? '' : 's'} found`;
-const status = t => { $('status').textContent = t; console.log('[status]', t); };
+const status = t => { $('status').textContent = t; const m = t.match(/(\d+)%/); $('bar').style.width = m ? m[1] + '%' : '0%'; $('bar').parentElement.classList.toggle('on', !!m); console.log('[status]', t); };
 
 // ---------- models ----------
 async function tf() {
@@ -134,8 +134,9 @@ async function processFile(file) {
 window.LW = { processFile, get walk() { return S.walk; } };
 $('photo').onchange = e => { const f = e.target.files[0]; e.target.value = ''; if (f) processFile(f).catch(err => { alert('Could not read that one: ' + err.message); }); };
 
+const toRoman = n => { const r = [[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']]; let o = ''; for (const [v, c] of r) while (n >= v) { o += c; n -= v; } return o; };
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const shardHTML = s => `<article class="shard"><div class="num">SHARD ${String(s.n).padStart(2, '0')} · ${new Date(s.at).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</div><img src="${s.thumb}" alt="${esc(s.caption)}"><h3>${esc(s.title)}</h3><p>${esc(s.lore)}</p><div class="meta">seen: ${esc(s.caption || '—')} ${s.tags.length ? '· tags: ' + esc(s.tags.join(', ')) : ''}<br>models: ${esc(s.models.join(' → '))} · ${(s.ms / 1000).toFixed(1)}s on-device</div></article>`;
+const shardHTML = s => `<article class="shard"><div class="num"><span class="ch">${toRoman(s.n)}</span>SHARD ${String(s.n).padStart(2, '0')} · ${new Date(s.at).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</div><img src="${s.thumb}" alt="${esc(s.caption)}"><h3>${esc(s.title)}</h3><p>${esc(s.lore)}</p><div class="meta">seen: ${esc(s.caption || '—')} ${s.tags.length ? '· tags: ' + esc(s.tags.join(', ')) : ''}<br>models: ${esc(s.models.join(' → '))} · ${(s.ms / 1000).toFixed(1)}s on-device</div></article>`;
 
 // ---------- codex ----------
 function renderCodex() {
@@ -159,18 +160,19 @@ function codexMD() {
 function dl(name, href) { const a = document.createElement('a'); a.href = href; a.download = name; a.click(); }
 $('mdBtn').onclick = () => dl('lore-codex.md', URL.createObjectURL(new Blob([codexMD()], { type: 'text/markdown' })));
 async function codexPNG() {
+  await document.fonts?.ready;
   const W = 1080, sh = S.walk.shards, H = 260 + sh.length * 760; const c = document.createElement('canvas'); c.width = W; c.height = H; const g = c.getContext('2d');
   const grd = g.createLinearGradient(0, 0, 0, H); grd.addColorStop(0, '#2a1450'); grd.addColorStop(1, '#0b0614'); g.fillStyle = grd; g.fillRect(0, 0, W, H);
-  g.fillStyle = '#f2b134'; g.font = '700 84px Impact, Arial Narrow, sans-serif'; g.textAlign = 'center'; g.fillText('LORE CODEX', W / 2, 120);
-  g.fillStyle = '#f4efe699'; g.font = '28px sans-serif'; g.fillText('LORE WALK — by Penta Dank · Next Realm Interactive', W / 2, 175);
+  g.fillStyle = '#f2b134'; g.font = '120px Anton, Impact, sans-serif'; g.textAlign = 'center'; g.fillText('LORE CODEX', W / 2, 120);
+  g.strokeStyle = '#e9b44c88'; g.lineWidth = 2; g.strokeRect(24, 24, W - 48, H - 48); g.strokeStyle = '#e9b44c33'; g.strokeRect(36, 36, W - 72, H - 72); g.fillStyle = '#f4efe699'; g.font = '22px Inter, sans-serif'; g.fillText('LORE WALK — by Penta Dank · Next Realm Interactive', W / 2, 175);
   let y = 240; g.textAlign = 'left';
   for (const s of sh) {
     const im = await new Promise(r => { const i = new Image(); i.onload = () => r(i); i.src = s.thumb; });
     const ih = 400, iw = Math.min(W - 120, im.width * ih / im.height); g.drawImage(im, (W - iw) / 2, y, iw, ih); y += ih + 60;
     g.fillStyle = '#ff6a1a'; g.font = '24px sans-serif'; g.fillText(`SHARD ${String(s.n).padStart(2, '0')}`, 60, y); y += 50;
-    g.fillStyle = '#f2b134'; g.font = '52px Impact, Arial Narrow, sans-serif'; g.fillText(s.title.toUpperCase().slice(0, 34), 60, y); y += 50;
-    g.fillStyle = '#f4efe6'; g.font = '28px Georgia, serif'; let line = '', lines = 0;
-    for (const word of s.lore.split(' ')) { if (g.measureText(line + word).width > W - 120) { if (lines < 6) g.fillText(line, 60, y); y += 38; lines++; line = ''; } line += word + ' '; }
+    g.fillStyle = '#f2b134'; g.font = '60px Anton, Impact, sans-serif'; g.fillText(s.title.toUpperCase().slice(0, 34), 60, y); y += 50;
+    g.fillStyle = '#f4efe6'; g.font = '34px "Cormorant Garamond", Georgia, serif'; let line = '', lines = 0;
+    for (const word of s.lore.split(' ')) { if (g.measureText(line + word).width > W - 120) { if (lines < 6) g.fillText(line, 60, y); y += 46; lines++; line = ''; } line += word + ' '; }
     if (lines < 7) g.fillText(line, 60, y); y = Math.max(y, y) + 40; y = 240 + (s.n) * 760;
   }
   return new Promise(r => c.toBlob(r, 'image/png'));

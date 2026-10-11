@@ -14,40 +14,51 @@
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;600&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="world" aria-hidden="true">
+  <div class="nebula n1"></div><div class="nebula n2"></div><div class="horizon"></div><div class="fog"></div>
+  <div class="embers"><i style="--x:0%;--d:8s;--w:0.0s;--s:2px"></i><i style="--x:37%;--d:15s;--w:10.3s;--s:3px"></i><i style="--x:74%;--d:13s;--w:8.6s;--s:4px"></i><i style="--x:11%;--d:11s;--w:6.9s;--s:2px"></i><i style="--x:48%;--d:9s;--w:5.2s;--s:3px"></i><i style="--x:85%;--d:16s;--w:3.5s;--s:4px"></i><i style="--x:22%;--d:14s;--w:1.8s;--s:2px"></i><i style="--x:59%;--d:12s;--w:0.1s;--s:3px"></i><i style="--x:96%;--d:10s;--w:10.4s;--s:4px"></i><i style="--x:33%;--d:8s;--w:8.7s;--s:2px"></i><i style="--x:70%;--d:15s;--w:7.0s;--s:3px"></i><i style="--x:7%;--d:13s;--w:5.3s;--s:4px"></i><i style="--x:44%;--d:11s;--w:3.6s;--s:2px"></i><i style="--x:81%;--d:9s;--w:1.9s;--s:3px"></i><i style="--x:18%;--d:16s;--w:0.2s;--s:4px"></i><i style="--x:55%;--d:14s;--w:10.5s;--s:2px"></i></div>
+  <div class="grain"></div><span class="leafmark">🍁</span>
+</div>
 <header>
-  <div class="brand">LORE WALK</div>
+  <div class="brand"><span class="sig">◆</span> LORE WALK</div>
   <div class="by">by Penta Dank · Next Realm Interactive · made for Bully</div>
 </header>
 
 <main>
 <section id="home" class="view">
+  <p class="kicker">Chapter 00 · The world is the map</p>
   <h1>Walk the world.<br><span class="gold">Write its lore.</span></h1>
   <p class="lede">The screen is the shortest part. Start a walk, put your phone away, and only pull it out when something stops you: a crooked tree, a doorway, a mural, a rock that looks like it has a name.</p>
   <button id="startBtn" class="big">Start a walk</button>
   <button id="codexBtnHome" class="ghost hidden">Open last Codex</button>
+  <div class="steps"><div><b>I</b>Walk</div><div><b>II</b>Notice</div><div><b>III</b>Capture</div><div><b>IV</b>Remember</div></div>
   <p class="fine">Open-weight AI runs <b>on your device</b>. Photos never leave it. Works offline once models are cached.</p>
 </section>
 
 <section id="walk" class="view hidden">
   <div class="away">
-    <div class="rune">ᛚ</div>
+    <div class="sigil"><div class="ring"></div><div class="ring r2"></div><div class="rune">✦</div></div>
+    <p class="kicker">The walk has begun</p>
     <h2>Put me away.</h2>
-    <p>Find something worth remembering.</p>
+    <p class="whisper">Find something worth remembering.</p>
     <p class="count" id="shardCount">0 shards found</p>
   </div>
-  <label class="big cam">Found something — capture it
+  <label class="big cam">I found something
     <input id="photo" type="file" accept="image/*" capture="environment" hidden>
   </label>
-  <div id="working" class="hidden"><div class="spin"></div><p id="status">Reading the place…</p></div>
+  <div id="working" class="hidden"><div class="spin"></div><div class="bar"><span id="bar"></span></div><p id="status">Reading the place…</p></div>
   <div id="lastShard"></div>
   <button id="endBtn" class="ghost">End walk → Lore Codex</button>
 </section>
 
 <section id="codex" class="view hidden">
-  <h2 class="tome">The Lore Codex</h2>
+  <p class="kicker center">Bound on foot</p>
+  <h2 class="tome">The Lore Codex</h2><div class="rule"></div>
   <p class="fine" id="codexMeta"></p>
   <svg id="route" viewBox="0 0 300 120" class="hidden"></svg>
   <div id="shards"></div>
@@ -61,7 +72,7 @@
 </main>
 
 <details id="settings">
-  <summary>⚙ Models</summary>
+  <summary>◇ Models · on-device ◇</summary>
   <label>Vision (reads the place)
     <select id="visionSel">
       <option value="Xenova/vit-gpt2-image-captioning">ViT-GPT2 captioning (Xenova, ~250MB)</option>
@@ -82,7 +93,7 @@
   <label><input type="checkbox" id="geoChk"> Use location to draw the route (stays on device)</label>
   <p class="fine" id="backend"></p>
   <p class="fine">Built with 🤗 Transformers.js · all models open-weight · <a href="https://github.com/" id="srcLink">source</a> · MIT</p>
-  <span class="leaf" title="Hacktoberfest">🍁</span>
+  
 </details>
 
 <script type="module" src="app.js"></script>
