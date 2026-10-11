@@ -1,0 +1,4 @@
+node_modules/
+.wrangler/
+shot-*.png
+test.jpg

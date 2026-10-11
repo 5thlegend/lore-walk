@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>LORE WALK — by Bully · Next Realm Interactive</title>
+<meta name="description" content="Put the phone away. Walk. Find something worth remembering. An on-device open-source AI turns your photo into a shard of world lore. Photos never leave your phone.">
+<meta name="theme-color" content="#0b0614">
+<meta property="og:title" content="LORE WALK — by Bully · Next Realm Interactive">
+<meta property="og:description" content="Walk your world. Open-weight AI, running on your phone, writes its lore.">
+<meta property="og:image" content="https://lore-walk-nextrealm.dankpenta.workers.dev/og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">LORE WALK</div>
+  <div class="by">by Bully · Next Realm Interactive</div>
+</header>
+
+<main>
+<section id="home" class="view">
+  <h1>Walk the world.<br><span class="gold">Write its lore.</span></h1>
+  <p class="lede">The screen is the shortest part. Start a walk, put your phone away, and only pull it out when something stops you: a crooked tree, a doorway, a mural, a rock that looks like it has a name.</p>
+  <button id="startBtn" class="big">Start a walk</button>
+  <button id="codexBtnHome" class="ghost hidden">Open last Codex</button>
+  <p class="fine">Open-weight AI runs <b>on your device</b>. Photos never leave it. Works offline once models are cached.</p>
+</section>
+
+<section id="walk" class="view hidden">
+  <div class="away">
+    <div class="rune">ᛚ</div>
+    <h2>Put me away.</h2>
+    <p>Find something worth remembering.</p>
+    <p class="count" id="shardCount">0 shards found</p>
+  </div>
+  <label class="big cam">Found something — capture it
+    <input id="photo" type="file" accept="image/*" capture="environment" hidden>
+  </label>
+  <div id="working" class="hidden"><div class="spin"></div><p id="status">Reading the place…</p></div>
+  <div id="lastShard"></div>
+  <button id="endBtn" class="ghost">End walk → Lore Codex</button>
+</section>
+
+<section id="codex" class="view hidden">
+  <h2 class="tome">The Lore Codex</h2>
+  <p class="fine" id="codexMeta"></p>
+  <svg id="route" viewBox="0 0 300 120" class="hidden"></svg>
+  <div id="shards"></div>
+  <div class="row">
+    <button id="mdBtn">Download .md</button>
+    <button id="imgBtn">Download image</button>
+    <button id="shareBtn">Share</button>
+  </div>
+  <button id="newBtn" class="big">New walk</button>
+</section>
+</main>
+
+<details id="settings">
+  <summary>⚙ Models</summary>
+  <label>Vision (reads the place)
+    <select id="visionSel">
+      <option value="Xenova/vit-gpt2-image-captioning">ViT-GPT2 captioning (Xenova, ~250MB)</option>
+      <option value="none">Off — CLIP tags only</option>
+    </select></label>
+  <label>Tags (zero-shot)
+    <select id="clipSel">
+      <option value="Xenova/clip-vit-base-patch32">CLIP ViT-B/32 (Xenova)</option>
+      <option value="none">Off</option>
+    </select></label>
+  <label>Lore writer
+    <select id="textSel">
+      <option value="HuggingFaceTB/SmolLM2-360M-Instruct">SmolLM2-360M-Instruct</option>
+      <option value="HuggingFaceTB/SmolLM2-135M-Instruct">SmolLM2-135M-Instruct (lighter)</option>
+      <option value="onnx-community/Qwen2.5-0.5B-Instruct">Qwen2.5-0.5B-Instruct</option>
+      <option value="template">Template only (instant, no download)</option>
+    </select></label>
+  <label><input type="checkbox" id="geoChk"> Use location to draw the route (stays on device)</label>
+  <p class="fine" id="backend"></p>
+  <p class="fine">Built with 🤗 Transformers.js · all models open-weight · <a href="https://github.com/" id="srcLink">source</a> · MIT</p>
+  <span class="leaf" title="Hacktoberfest">🍁</span>
+</details>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

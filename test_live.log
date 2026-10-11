@@ -1,0 +1,86 @@
+0s REQ https://lore-walk-nextrealm.dankpenta.workers.dev/
+0s REQ https://lore-walk-nextrealm.dankpenta.workers.dev/style.css
+0s REQ https://lore-walk-nextrealm.dankpenta.workers.dev/app.js
+0s C: No available adapters.
+1s REQ https://lore-walk-nextrealm.dankpenta.workers.dev/sw.js
+1s REQ blob:https://lore-walk-nextrealm.dankpenta.workers.dev/2676b8e3-08ad-4309-ada2-688d23fca20e
+1s REQ https://lore-walk-nextrealm.dankpenta.workers.dev/
+1s REQ blob:https://lore-walk-nextrealm.dankpenta.workers.dev/49bbb4da-a879-4fb4-a57c-97b0030cf90f
+1s C: [status] Reading the place…
+1s REQ https://lore-walk-nextrealm.dankpenta.workers.dev/index.html
+1s REQ https://lore-walk-nextrealm.dankpenta.workers.dev/style.css
+1s REQ https://lore-walk-nextrealm.dankpenta.workers.dev/app.js
+1s REQ https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/transformers.min.js
+1s REQ https://lore-walk-nextrealm.dankpenta.workers.dev/manifest.webmanifest
+1s REQ https://lore-walk-nextrealm.dankpenta.workers.dev/
+1s REQ https://lore-walk-nextrealm.dankpenta.workers.dev/icon-192.png
+1s C: Access to fetch at 'https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer_config.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer_config.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+1s C: vision failed TypeError: Failed to fetch
+    at p (https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/transformers.min.js:1:748502)
+    at f (https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/transformers.min.js:1:752189)
+    at async _ (https://cdn.jsdelivr.net/npm/@h
+1s C: [status] Naming what it is…
+1s C: Access to fetch at 'https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+1s C: Access to fetch at 'https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/preprocessor_config.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/preprocessor_config.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+1s C: Access to fetch at 'https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/config.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/config.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+1s REQ https://lore-walk-nextrealm.dankpenta.workers.dev/icon.svg
+1s C: Access to fetch at 'https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer_config.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer_config.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+1s C: Access to fetch at 'https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+1s C: Access to fetch at 'https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/preprocessor_config.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/preprocessor_config.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+1s C: Access to fetch at 'https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/config.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/config.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+1s C: Access to fetch at 'https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/tokenizer_config.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/tokenizer_config.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+1s C: clip failed TypeError: Failed to fetch
+    at p (https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/transformers.min.js:1:748502)
+    at f (https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/transformers.min.js:1:752189)
+    at async _ (https://cdn.jsdelivr.net/npm/@hug
+1s C: [status] Writing the lore…
+1s C: Access to fetch at 'https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/preprocessor_config.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/preprocessor_config.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+1s C: Access to fetch at 'https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/config.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/config.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+1s C: Access to fetch at 'https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/tokenizer.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/main/tokenizer.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+1s REQ https://lore-walk-nextrealm.dankpenta.workers.dev/icon-512.png
+1s C: Access to fetch at 'https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/tokenizer.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/tokenizer.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+1s C: text model failed TypeError: Failed to fetch
+    at p (https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/transformers.min.js:1:748502)
+    at f (https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.7.2/dist/transformers.min.js:1:752189)
+    at async _ (https://cdn.jsdelivr.net/np
+1s C: Access to fetch at 'https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/tokenizer_config.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/tokenizer_config.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+1s C: Access to fetch at 'https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/config.json' from origin 'https://lore-walk-nextrealm.dankpenta.workers.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+FAIL https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/resolve/main/config.json net::ERR_FAILED
+1s C: Failed to load resource: net::ERR_FAILED
+RESULT: SHARD 01 · 7:14 PM
+THE THRESHOLD OF EMBERLINE
+
+Long before the roads had names, the stone at Emberline was where the Realm kept its promises. Most walk past it without a second look, which is exactly how it survives. Touch it once and you will remember a place you have never been.
+
+seen: —
+models: template (seeded by vision output) · 0.4s on-device
+
+Shard saved. Now put me away again.
